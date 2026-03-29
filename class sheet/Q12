@@ -1,0 +1,11 @@
+class Calculator :
+    
+    def __log_operation (self,a,b) :
+        return a + b 
+    
+    def add (self,a,b) :
+        return self.__log_operation(a,b) 
+    
+a1 = Calculator()
+
+print(a1.add(3,5))
