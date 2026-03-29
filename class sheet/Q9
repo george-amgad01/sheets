@@ -1,0 +1,18 @@
+class Person :
+    count = 0 
+
+    @classmethod 
+    def get_count(cls) :
+
+        print(cls.count)
+
+    def __init__ (self,name) :
+        self.name = name 
+
+        Person.count += 1 
+
+p1 = Person('Ahmed')
+p2 = Person('khaled')
+p3 = Person('Alaa')
+
+Person.get_count()
