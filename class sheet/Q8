@@ -1,0 +1,13 @@
+class Book :
+    library_name = 'alex'
+
+    @classmethod 
+    def change_name (cls,new_name) :
+        cls.library_name = new_name
+
+b1 = Book()
+b2 = Book ()
+b1.change_name('Ahmed')
+
+print(b1.library_name)
+print(b2.library_name)
