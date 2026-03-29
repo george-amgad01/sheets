@@ -1,0 +1,9 @@
+class Teacher  :
+    def __init__ (self,name,salary) :
+        self.name = name 
+        self._salary = salary
+
+T1 = Teacher ('Ahmed',5000)
+
+print(T1.name)
+print(T1._salary)
