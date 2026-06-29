@@ -6,13 +6,11 @@ using namespace std;
 void solve() {
 
 }
-ll suffix_sum (vector<ll>& v , ll n , ll goal) {
-    static ll res = 0  ;
-    if (n == goal - 1 ) { // 1
-        return res ;
+ll suffix_sum ( vector <ll>& v , ll n , ll goal ) {
+    if (goal == 0 ) {
+        return 0;
     }
-    res += v[n-1] ;     /// 4 + 3 + 2
-    return suffix_sum(v, n-1, goal );
+    return v[n-1] + suffix_sum (v , n-1, goal-1);
 }
 
 
